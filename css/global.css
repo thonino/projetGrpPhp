@@ -1,0 +1,4 @@
+body {
+    padding-top: 80px; /* décalage à cause de "fixed-top" de la navbar  */
+    padding-bottom: 50px;
+  }
