@@ -1,9 +1,9 @@
-<?php session_start();include("connexion.php"); // session active && importation connexion pdo ?>
+<?php session_start();include("connexion.php"); // Session active && importation connexion pdo ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <?php include("metaLink.php"); // Importation de metaLink.php ?>
-        <title>Page d'accueil</title>
+        <title>Liste des Produits</title>
     </head>
     <body>
         <?php include("navbar.php"); // Importation de navbar.php ?>
