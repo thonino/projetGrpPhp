@@ -7,7 +7,7 @@
     <body>
         <?php include("navbar.php"); // Importation de navbar.php?>
         <div class=" container d-flex flex-column align-items-center mt-5">
-            <h2 class="animtop ">Inscription</h2>
+            <h2 class="animtop ">S'inscrire</h2>
             <!-- Envoie des infos avec l'action $_Post vers => createUser.php pour le traitement-->
             <form action="createUser.php" method="post" class="col-8">
                 <div class="mb-3 animtop">

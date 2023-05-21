@@ -9,12 +9,12 @@
 <html lang="en">
     <head>
         <?php include("metaLink.php"); // Importation de metaLink.php ?>
-        <title>Modifier informations</title>
+        <title>Modifier les informations</title>
     </head>
     <body>
     <?php include("navbar.php"); // Importation de navbar.php ?>
         <div class="container d-flex flex-column align-items-center mt-5">
-            <h3 class="anim">Modifier informations</h3>
+            <h3 class="anim">Modifier les informations</h3>
             <!-- Envoie du pseudo en $_GET via ?pseudo= && des infos $_POST vers => updateUser.php  -->
             <form action="updateUser.php?pseudo=<?php echo ($user['pseudo']);?>" method="post" class="col-8">
                 <div class="mb-3 animtop">
@@ -41,7 +41,7 @@
                 <div class="mb-3 animtop">
                     <label for="role" class="form-label fw-bold">Rôle</label>
                     <select class="form-select"  name="role" value="<?php echo ($user['role']); ?>">
-                        <option selected>Choisissez votre rôle</option>
+                        <option selected>Choisissez le rôle</option>
                         <option value="responsable">Responsable</option>
                         <option value="employe">Employé</option>
                     </select>

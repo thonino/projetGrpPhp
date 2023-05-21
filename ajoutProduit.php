@@ -15,7 +15,7 @@
                 }   
         ?>
         <div class=" container d-flex flex-column align-items-center mt-5">
-            <h3  class="anim">Ajout d'un produit</h3>
+            <h3  class="anim">Ajouter un produit</h3>
             <!-- 
                 Envoie des infos avec l'action $_Post vers => createProduit.php pour le traitement
                 Si envoie de fichier, ne pas oublierl'attribut => enctype="multipart/form-data"
@@ -24,7 +24,7 @@
                 <div class="mb-3 animtop">
                     <label for="categorie" class="form-label fw-bold">Catégorie</label>
                     <select class="form-select"  name="categorie">
-                        <option selected>Choisissez la catégorie du produit</option>
+                        <option selected>Choisissez une catégorie du produit</option>
                         <option value="1">Ordinateur</option>
                         <option value="2">Tablette</option>
                         <option value="3">Mobile</option>
