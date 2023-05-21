@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php include("metaLink.php"); // Importation de metaLink.php ?>
+        <?php include("_metaLink.php"); // Importation de metaLink.php ?>
         <title>Connexion</title>
     </head>
     <body>
-        <?php include("navbar.php"); ?>
+        <?php include("_navbar.php"); ?>
         <?php 
             // Message flash
             if(isset($_GET['message'])) { // Si message trouvé
@@ -30,6 +30,6 @@
             </form>
         </div>
         
-        <?php include("script.php"); // Importation de script.php ?>
+        <?php include("_script.php"); // Importation de script.php ?>
     </body>
 </html>

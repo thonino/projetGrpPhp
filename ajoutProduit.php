@@ -1,13 +1,13 @@
-<?php session_start();include("connexion.php"); // Session active && importation connexion pdo ?>
+<?php session_start();include("_connexion.php"); // Session active && importation connexion pdo ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php include("metaLink.php"); // Importation de metaLink.php ?>
+        <?php include("_metaLink.php"); // Importation de metaLink.php ?>
         <title>Ajout de produit</title>
     </head>
     <body>
         <?php 
-            include("navbar.php"); // Importation de navbar.php
+            include("_navbar.php"); // Importation de navbar.php
             // Afficher un message flash 
             if(isset($_GET['message'])) { 
                     $message = $_GET['message'];
@@ -50,6 +50,6 @@
             </form>
         </div>
 
-        <?php include("script.php"); // Importation de script.php ?>
+        <?php include("_script.php"); // Importation de script.php ?>
     </body>
 </html>

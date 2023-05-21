@@ -1,13 +1,13 @@
-<?php session_start();include("connexion.php"); // session active && importation connexion pdo ?>
+<?php session_start();include("_connexion.php"); // session active && importation connexion pdo ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php include("metaLink.php"); // Importation de metaLink.php ?>
+        <?php include("_metaLink.php"); // Importation de metaLink.php ?>
         <title>Page d'accueil</title>
     </head>
     <body>
         <?php 
-            include("navbar.php"); // Importation de navbar.php
+            include("_navbar.php"); // Importation de navbar.php
             if(isset($_GET['value'])){ // Si value est trouvée
                 $value = $_GET['value']; // Atribuer value à $value 
             } else {
@@ -46,11 +46,11 @@
                 FROM `produit`, `categorie` where  `produit`.categorie = `categorie`.id AND `categorie`.id ='.$value) as $produit): 
             ?>
                 <div class="border m-2" style="width: 250px">
-                    <?php include("cardProduit.php"); // importation de la carte produit?>
+                    <?php include("_cardProduit.php"); // importation de la carte produit?>
                 </div>
             <?php endforeach;?>
         </div>
         
-        <?php include("script.php"); // Importation de script.php ?>
+        <?php include("_script.php"); // Importation de script.php ?>
     </body>
 </html>

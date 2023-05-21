@@ -1,4 +1,4 @@
-<?php session_start();include("connexion.php"); // session active && importation connexion pdo
+<?php session_start();include("_connexion.php"); // session active && importation connexion pdo
     $pseudo = $_GET['pseudo']; // Récupération du pseudo
     $ps = $pdo->prepare("SELECT * FROM user WHERE pseudo=?"); // Prepare statement
     $params = array($pseudo); // Associer les paramettres 
@@ -8,11 +8,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php include("metaLink.php"); // Importation de metaLink.php ?>
+        <?php include("_metaLink.php"); // Importation de metaLink.php ?>
         <title>Modifier les informations</title>
     </head>
     <body>
-    <?php include("navbar.php"); // Importation de navbar.php ?>
+    <?php include("_navbar.php"); // Importation de navbar.php ?>
         <div class="container d-flex flex-column align-items-center mt-5">
             <h3 class="anim">Modifier les informations</h3>
             <!-- Envoie du pseudo en $_GET via ?pseudo= && des infos $_POST vers => updateUser.php  -->
@@ -51,6 +51,6 @@
             </form>
         </div>
         
-        <?php include("script.php"); // Importation de script.php ?>
+        <?php include("_script.php"); // Importation de script.php ?>
     </body>
 </html>

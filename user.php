@@ -1,4 +1,4 @@
-<?php session_start();include("connexion.php"); // session active && importation connexion pdo
+<?php session_start();include("_connexion.php"); // session active && importation connexion pdo
     $req = "SELECT * FROM user"; // requete
     $ps = $pdo->prepare($req); // Prepare statement requete
     $ps->execute(); // Exécution de la request vers la BD
@@ -6,12 +6,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php include("metaLink.php"); // Importation de metaLink.php ?>
+        <?php include("_metaLink.php"); // Importation de metaLink.php ?>
         <title>Liste des utilisateurs</title>
     </head>
     <body>
         <?php 
-            include("navbar.php"); // Importation de navbar.php
+            include("_navbar.php"); // Importation de navbar.php
             // Message flash
             if(isset($_GET['message'])) { // Si message trouvé
                 $message = $_GET['message'];
@@ -72,6 +72,6 @@
             </div>
         </div>
 
-        <?php include("script.php"); // Importation de script.php ?>
+        <?php include("_script.php"); // Importation de script.php ?>
     </body>
 </html>

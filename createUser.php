@@ -1,4 +1,4 @@
-<?php include("connexion.php"); // Session active && importation connexion pdo
+<?php include("_connexion.php"); // Session active && importation connexion pdo
 
 // stockage des informations entrées dans le formulaire
 $pseudo=$_POST['pseudo'];

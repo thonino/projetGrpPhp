@@ -1,12 +1,12 @@
-<?php session_start();include("connexion.php"); // Session active && importation connexion pdo ?>
+<?php session_start();include("_connexion.php"); // Session active && importation connexion pdo ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php include("metaLink.php"); // Importation de metaLink.php ?>
+        <?php include("_metaLink.php"); // Importation de metaLink.php ?>
         <title>Liste des Produits</title>
     </head>
     <body>
-        <?php include("navbar.php"); // Importation de navbar.php ?>
+        <?php include("_navbar.php"); // Importation de navbar.php ?>
         <?php 
             // Message flash
             if(isset($_GET['message'])) { // Si message trouvé
@@ -40,7 +40,7 @@
                                             WHERE   `produit`.categorie = `categorie`.id') as $produit): 
                 ?>
                     <div class="border m-2" style="width: 250px" >
-                        <?php include("cardProduit.php"); // importation de la carte produit?>
+                        <?php include("_cardProduit.php"); // importation de la carte produit?>
                     </div>
                 <?php 
                     endforeach;
@@ -48,6 +48,6 @@
             </div>
         </div>
         
-        <?php include("script.php"); // Importation de script.php ?>
+        <?php include("_script.php"); // Importation de script.php ?>
     </body>
 </html>
